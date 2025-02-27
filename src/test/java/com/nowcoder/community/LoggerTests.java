@@ -8,6 +8,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.io.File;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ContextConfiguration(classes = CommunityApplication.class)
@@ -23,6 +25,11 @@ public class LoggerTests {
         logger.info("info log");
         logger.warn("warn log");
         logger.error("error log");
+    }
+
+    @Test
+    public void testFile() {
+
     }
 
 }
